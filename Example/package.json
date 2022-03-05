@@ -14,10 +14,10 @@
     "postinstall": "node ../scripts/examples_postinstall.js"
   },
   "dependencies": {
-    "react": "16.11.0",
-    "react-native": "0.62.2",
+    "react": "17",
+    "react-native": "0.67",
     "react-native-config": "../",
-    "react-native-windows": "^0.62.0-0"
+    "react-native-windows": "0.67"
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",
