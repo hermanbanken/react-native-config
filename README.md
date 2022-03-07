@@ -370,7 +370,7 @@ Config.GOOGLE_MAPS_API_KEY; // 'abcdefgh'
 Config.TRACKING_ENABLED; // 'false'
 ```
 
-Any environment variables with an `RNC_` prefix will be available. For instance, we could add a new variable by running `RC_DEV_TOOLS=true react-native run-ios` with the same `.env` file above will result in:
+Any environment variables with an `RNC_` prefix will be available. For instance, we could add a new variable by running `RNC_DEV_TOOLS=true react-native run-ios` with the same `.env` file above will result in:
 
 ```
 import Config from "react-native-config";
