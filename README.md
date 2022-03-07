@@ -361,7 +361,7 @@ GOOGLE_MAPS_API_KEY=abcdefgh
 TRACKING_ENABLED=true
 ```
 
-By running your app with `RN_CONFIG_TRACKING_ENABLED=false react-native run-ios`, the variables declared in your app will be:
+By running your app with `RNC_TRACKING_ENABLED=false react-native run-ios`, the variables declared in your app will be:
 
 ```
 import Config from "react-native-config";
@@ -370,7 +370,7 @@ Config.GOOGLE_MAPS_API_KEY; // 'abcdefgh'
 Config.TRACKING_ENABLED; // 'false'
 ```
 
-Any environment variables with an `RN_CONFIG_` prefix will be available. For instance, we could add a new variable by running `RN_CONFIG_DEV_TOOLS=true react-native run-ios` with the same `.env` file above will result in:
+Any environment variables with an `RNC_` prefix will be available. For instance, we could add a new variable by running `RC_DEV_TOOLS=true react-native run-ios` with the same `.env` file above will result in:
 
 ```
 import Config from "react-native-config";

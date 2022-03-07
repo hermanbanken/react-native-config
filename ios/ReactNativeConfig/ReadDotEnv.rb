@@ -61,7 +61,7 @@ def read_dot_env(envs_root)
   end
 
   ENV
-    .select { |k,v| k.start_with?("RN_CONFIG_") }
+    .select { |k,v| k.start_with?("RNC_") }
     .transform_keys { |k| k[10..] }
     .each { |k,v| dotenv[k]=v }
 
