@@ -57,7 +57,13 @@ def read_dot_env(envs_root)
       puts('**************************')
       puts('*** Missing .env file ****')
       puts('**************************')
-      return [{}, false] # set dotenv as an empty hash
+      {} # set dotenv as an empty hash
   end
+
+  ENV
+    .select { |k,v| k.start_with?("RNC_") }
+    .transform_keys { |k| k[4..] }
+    .each { |k,v| dotenv[k]=v }
+
   [dotenv, custom_env]
 end
