@@ -57,7 +57,7 @@ def read_dot_env(envs_root)
       puts('**************************')
       puts('*** Missing .env file ****')
       puts('**************************')
-      return [{}, false] # set dotenv as an empty hash
+      {} # set dotenv as an empty hash
   end
 
   ENV
